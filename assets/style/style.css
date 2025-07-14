@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+body{
+    background-color: #000000;
+}
+
+/* ========== CLASSES MODIFICADORAS ========== */
+
+.wrapper{
+    width: 1120px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* ========== NAVBAR ========== */
+header{
+    width: 100%;
+    position: absolute;
+    /* z-index: 1000; */
+    top: 68px;
+}
+.header__wrapper{
+    padding: 0;
+}
+.header__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: none
+}
+.header__logo{
+    width: 140px
+}
+.header__logo img{
+    width: 100%;
+}
+/* .header__nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.header__nav-item a{
+    text-decoration: none;
+} */
+
+/* ========== HERO ========== */
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg/BG_Header.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.hero__content{
+    margin-top:6rem;
+}
+.hero__title{
+    font-size: 48px;
+    font-weight:900;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 80px;
+}
+.hero__btn{
+    display: block;
+    background: linear-gradient(180deg,rgba(212, 133, 0, 1) 0%, rgba(246, 167, 35, 1) 100%);
+    text-decoration: none;
+    color: #000;
+    width: 404px;
+    height: 68px; 
+    text-align: center;
+    line-height: 68px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 12px;
+    /* border: 4px solid #915c00; */
+}
+
+/* ========== ABOUT ========== */
+.about__content{
+    display: flex;
+    align-items: end;
+}
+.about__image{
+    display: flex;
+    align-items: end;
+}
+.about__text{
+    color: #fff;
+    padding-left: 3rem;
+    border: 1px solid #F6A723;
+    border-left: 0;
+    border-radius: 0 12px 12px 0;
+    height: 362px;
+    width: calc(100% - 465px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about__text h2{
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+.about__text p{
+    font-size: 18px;
+    font-weight: 300;
+}
