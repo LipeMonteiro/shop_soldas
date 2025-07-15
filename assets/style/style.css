@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Lexend", sans-serif;
+    color: #fff
 }
 
 body{
@@ -14,7 +15,7 @@ body{
 .wrapper{
     width: 1120px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 80px 0;
 }
 
 /* ========== NAVBAR ========== */
@@ -71,20 +72,44 @@ header{
     margin-bottom: 80px;
 }
 .hero__btn{
+    position: relative;
     display: block;
-    background: linear-gradient(180deg,rgba(212, 133, 0, 1) 0%, rgba(246, 167, 35, 1) 100%);
+    background: none;
     text-decoration: none;
     color: #000;
     width: 404px;
     height: 68px; 
     text-align: center;
-    line-height: 68px;
+    line-height: 62px;
     font-weight: bold;
     font-size: 20px;
     border-radius: 12px;
-    /* border: 4px solid #915c00; */
+    border: 4px solid #915c00;
+    overflow: hidden;
+    z-index: 100;
+    transition: color 0.5s ease-in-out;
 }
-
+.hero__btn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg,rgba(212, 133, 0, 1) 0%, rgba(246, 167, 35, 1) 100%);
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    transform-origin: center;
+    transform: scaleX(1);
+    opacity: 1;
+}
+.hero__btn:hover{
+    color: #fff;
+}
+.hero__btn:hover::after{
+    transform: scaleX(0);
+    opacity: 0.8;
+}
 /* ========== ABOUT ========== */
 .about__content{
     display: flex;
@@ -113,4 +138,47 @@ header{
 .about__text p{
     font-size: 18px;
     font-weight: 300;
+}
+
+/* ========== PRODUCTS ========== */
+.products__title{
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+.product{
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    background-color: #1B1B1B;
+    border-radius: 20px
+}
+.product__content-text{
+    width: 387px;
+}
+.product__content-text h3{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.product__content-text h4{
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin-bottom: 1.25rem
+}
+.product__content-text ul{
+    padding-left: 2rem;
+}
+.product__content-text ul li{
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+.product__content-image{
+    padding: 2.5rem 3.75rem;
+    display: flex;
+    gap: 2.5rem;
+    border-radius: 12px;
+    background-color: #fff;
 }
