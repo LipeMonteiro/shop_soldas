@@ -138,8 +138,11 @@ header{
 .about__text p{
     font-size: 16px;
     font-weight: 300;
+    max-width: 540px;;
 }
-
+.about__paragraph{
+    margin-bottom: 1.5rem;
+}
 /* ========== PRODUCTS ========== */
 .products__title{
     font-size: 2.5rem;
@@ -211,9 +214,45 @@ header{
     margin-bottom: 1rem;
 }
 .diferencial p{
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 25px;
+    max-width: 180px;
 }
 
 /* ========== COMPANIES ========= */
 
+.companies{
+    background-image: url(../img/bg/bg_Marcas_Parceiras.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.companies__title{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem; 
+}
+.companies__wrapper p{
+    max-width: 35rem;
+}
+.companies__paragraph{
+    margin-bottom: 1.5rem;
+}
+.companies__content{
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.companies__content article{
+    padding: 2.5rem;
+    width: 250px;
+    height: 250px;
+    background-color: #FFFFFF;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.companies__content article img{
+    width: 100%;
+}
