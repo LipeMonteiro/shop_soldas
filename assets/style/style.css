@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #00050A;
+    background-color: #000000;
 }
 
 /* ========== CLASSES MODIFICADORAS ========== */
@@ -222,10 +222,12 @@ header{
 /* ========== COMPANIES ========= */
 
 .companies{
+    height: 100vh;
     background-image: url(../img/bg/bg_Marcas_Parceiras.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0px 70px 50px -21px rgba(0, 0, 0, 0.959) inset;
 }
 .companies__title{
     font-size: 2.5rem;
@@ -256,3 +258,5 @@ header{
 .companies__content article img{
     width: 100%;
 }
+
+/* ========== CONTACT ========== */
