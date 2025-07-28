@@ -587,7 +587,7 @@ input.error, textarea.error {
 @media screen and (max-width: 650px){
     
     .wrapper{
-        padding: 40px 20px;
+        padding: 40px 15px;
     }
     .section__title{
         font-size: 1.75rem;
@@ -624,8 +624,9 @@ input.error, textarea.error {
         gap: 1rem;
     }
      .companies__content article{
-        width: 160px;
-        height: 160px;
+        width: 130px;
+        height: 130px;
+        padding: 20px;
     }
     .contact__info{
         flex-direction: column;
