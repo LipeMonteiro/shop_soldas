@@ -621,12 +621,11 @@ input.error, textarea.error {
         width: 100%;
     }
     .companies__content{
-        justify-content: space-between;
-        gap: 1.5rem;
+        gap: 1rem;
     }
      .companies__content article{
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 160px;
     }
     .contact__info{
         flex-direction: column;
