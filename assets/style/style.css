@@ -465,6 +465,7 @@ input.error, textarea.error {
 
 .contact__adress .contact__info-item {
     max-width: 390px;
+    height: auto;
 }
 
 .contact__adress iframe {
@@ -473,7 +474,7 @@ input.error, textarea.error {
 
 /* ========== FOOTER ========== */
 .footer .wrapper {
-    padding: 0 0 2.5rem 0;
+    padding-bottom: 2.5rem;
 }
 
 .footer__line {
@@ -486,6 +487,8 @@ input.error, textarea.error {
 .footer__logo {
     text-align: center;
 }
+
+/* =========== BREAKPOINTS =========== */
 
 @media screen and (max-width: 1199px){
     .section__title{
@@ -566,7 +569,7 @@ input.error, textarea.error {
         flex-wrap: wrap;
         display: flex;
     }
-    .contact__info-item{
+    .cotact__info .contact__info-item{
         flex: 1 1 250px;
         gap: .5rem;
         justify-content: center;
@@ -574,11 +577,17 @@ input.error, textarea.error {
     .contact__info-item p{
         font-size: 1.5rem;
     }
+    .contact__adress{
+        flex-direction: column;
+    }
+    .contact__adress iframe{
+        width: 100%;
+    }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 650px){
     
     .wrapper{
-        padding: 40px 10px;
+        padding: 40px 20px;
     }
     .section__title{
         font-size: 1.75rem;
@@ -587,7 +596,7 @@ input.error, textarea.error {
         font-size: 28px;
     }
     .hero__btn{
-        width: 100%;
+        width: 80%;
     }
     .about__image{
         width: 100%;
@@ -605,12 +614,22 @@ input.error, textarea.error {
         height: auto;
         flex-direction: column;
     }
+    .product__content-image div{
+        width: 100px;
+    }
+    .product__content-image div img{
+        width: 100%;
+    }
     .companies__content{
+        justify-content: space-between;
         gap: 1.5rem;
     }
      .companies__content article{
-        width: 180px;
-        height: 180px;
+        width: 140px;
+        height: 140px;
+    }
+    .contact__info{
+        flex-direction: column;
     }
 }
 
