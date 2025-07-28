@@ -18,8 +18,6 @@ telefoneInput.addEventListener('input', function () {
 
 // Validação personalizada
 form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
     let isValid = true;
 
     const campos = form.querySelectorAll('input, textarea');
@@ -29,33 +27,29 @@ form.addEventListener('submit', function (e) {
     campos.forEach((campo) => {
         const container = campo.parentElement;
         const erroEl = container.querySelector('.error-message');
-        erroEl.textContent = ''; // limpa erro anterior
-
+        erroEl.textContent = '';
         campo.classList.remove('error');
 
         if (!campo.value.trim()) {
             erroEl.textContent = 'Este campo é obrigatório.';
             campo.classList.add('error');
             isValid = false;
-        }
-
-
-        if (!campo.value.trim()) {
-            erroEl.textContent = 'Este campo é obrigatório.';
-            isValid = false;
         } else if (campo.name === 'email' && !emailPattern.test(campo.value)) {
             erroEl.textContent = 'Insira um e-mail válido.';
+            campo.classList.add('error');
             isValid = false;
         } else if (campo.name === 'telefone' && !telefonePattern.test(campo.value)) {
             erroEl.textContent = 'Formato esperado: (11) 91234-5678';
+            campo.classList.add('error');
             isValid = false;
         }
     });
 
-    if (isValid) {
-        form.submit(); // Envia o formulário se tudo estiver válido
+    if (!isValid) {
+        e.preventDefault(); // impede o envio somente se houver erro
     }
 });
+
 
 
 // ScrollReveal().reveal('.hero__content', {
