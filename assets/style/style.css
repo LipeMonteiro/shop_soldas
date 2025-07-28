@@ -488,6 +488,33 @@ input.error, textarea.error {
     text-align: center;
 }
 
+/* ========== OBRIGADO ========= */
+
+.obrigado {
+    width: 100%;
+    height: 100Dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo__obrigado {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.obrigado h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: auto;
+}
+.obrigado p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 /* =========== BREAKPOINTS =========== */
 
 @media screen and (max-width: 1199px){
