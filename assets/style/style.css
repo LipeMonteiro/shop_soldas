@@ -62,7 +62,7 @@ header {
 
 /* ========== HERO ========== */
 .hero {
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     background-image: url(../img/bg/BG_Header.png);
     background-position: center;
